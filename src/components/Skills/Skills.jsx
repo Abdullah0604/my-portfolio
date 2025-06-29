@@ -13,17 +13,19 @@ const skills = [
 
 function Skills() {
   return (
-    <section className="bg-white " id="skills">
-      <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-10 text-black">My Skills</h2>
+    <section id="skills">
+      <div className="max-w-6xl mx-auto px-4 lg:px-12 text-center">
+        <h2 className="text-3xl font-bold mb-10 text-gray-300">
+          Areas of Expertise
+        </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="flex flex-col items-center gap-2 hover:scale-105 transition duration-300"
+              className=" bg-gray-800 py-5 rounded-2xl flex flex-col items-center gap-2 hover:scale-105 transition duration-300"
             >
               <img src={skill.icon} alt={skill.name} className="w-22" />
-              <p className="text-gray-700 text-sm font-medium">{skill.name}</p>
+              <p className="text-gray-400 text-sm font-medium">{skill.name}</p>
             </div>
           ))}
         </div>

@@ -15,9 +15,11 @@ import {
   SiExpress,
 } from "react-icons/si";
 import { BiSolidComponent } from "react-icons/bi";
+import { Link } from "react-router";
 
 const projects = [
   {
+    id: 1,
     title: "Ecobari",
     description:
       "A community-driven web platform for gardening enthusiasts to share tips, connect with local gardeners, ask plant care questions, and join events.",
@@ -34,9 +36,9 @@ const projects = [
     live: "https://ecobary-gardening-community.web.app/",
     github:
       "https://github.com/Abdullah0604/EcoBari-gardening-community-platform",
-    details: "/project-details/1",
   },
   {
+    id: 2,
     title: "RunNexus",
     description:
       "Welcome to RunNexus, a complete marathon management platform that connects organizers with runners.",
@@ -53,9 +55,9 @@ const projects = [
     image: "/projects/project-02.png",
     live: "https://run-nexus.web.app/",
     github: "https://github.com/Abdullah0604/marathon-management-system",
-    details: "/project-details/2",
   },
   {
+    id: 3,
     title: "Boxnetic",
     description:
       "Boxnetic is a modern Subscription Box Service Platform that allows users to explore, subscribe to, and manage personalized subscription boxes with ease. ",
@@ -71,7 +73,6 @@ const projects = [
     image: "/projects/project-03.png",
     live: "https://boxnetic-subscription-website.web.app/",
     github: "https://github.com/Abdullah0604/boxnetic-subscription-platform",
-    details: "/project-details/3",
   },
 ];
 
@@ -116,16 +117,16 @@ function Projects() {
   };
 
   return (
-    <section className="bg-white px-4 md:px-12" id="projects">
-      <h2 className="text-3xl font-bold text-center text-black mb-12">
-        Projects
+    <section className=" max-w-6xl mx-auto px-4 md:px-12" id="projects">
+      <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">
+        Projects I’ve Built
       </h2>
 
       <div className="space-y-10">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="border-2 border-gray-200/80 rounded-lg p-4 md:p-6 flex flex-col md:flex-row gap-6 shadow-md"
+            className="border-2 border-gray-800/80 rounded-lg p-4 md:p-6 flex flex-col md:flex-row gap-6 shadow-md"
           >
             {/* Image */}
             <div className="md:w-1/2 w-full">
@@ -139,13 +140,15 @@ function Projects() {
             {/* Content */}
             <div className="md:w-1/2 w-full flex flex-col justify-between">
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-black">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-200">
                   {project.title}
                 </h3>
-                <p className="text-gray-500 mb-4">{project.description}</p>
-                <ul className="list-disc list-inside text-gray-700 mb-3">
+                <p className="text-gray-400 mb-4">{project.description}</p>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
                   {project.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
+                    <li key={i} className="text-gray-400">
+                      {feature}
+                    </li>
                   ))}
                 </ul>
 
@@ -198,13 +201,13 @@ function Projects() {
                   <FaGithub />
                   GitHub
                 </a>
-                <a
-                  href={project.details}
+                <Link
+                  to={`/project-details/${project.id}`}
                   className="flex items-center gap-2 bg-[#4CAF50] text-white px-4 py-2 rounded hover:bg-green-700"
                 >
                   <FaInfoCircle />
                   Details
-                </a>
+                </Link>
               </div>
             </div>
           </div>
