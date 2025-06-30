@@ -19,7 +19,7 @@ import { Link } from "react-router";
 
 const projects = [
   {
-    id: 1,
+    id: "ecobari",
     title: "Ecobari",
     description:
       "A community-driven web platform for gardening enthusiasts to share tips, connect with local gardeners, ask plant care questions, and join events.",
@@ -38,7 +38,7 @@ const projects = [
       "https://github.com/Abdullah0604/EcoBari-gardening-community-platform",
   },
   {
-    id: 2,
+    id: "runnexus",
     title: "RunNexus",
     description:
       "Welcome to RunNexus, a complete marathon management platform that connects organizers with runners.",
@@ -57,7 +57,7 @@ const projects = [
     github: "https://github.com/Abdullah0604/marathon-management-system",
   },
   {
-    id: 3,
+    id: "boxnetic",
     title: "Boxnetic",
     description:
       "Boxnetic is a modern Subscription Box Service Platform that allows users to explore, subscribe to, and manage personalized subscription boxes with ease. ",

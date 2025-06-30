@@ -1,0 +1,83 @@
+{
+  "ecobari": {
+    "id": "ecobari",
+    "title": "EcoBari – Gardening Community Platform",
+    "description": "A community-driven platform for gardening lovers to connect, share tips, ask questions, and join local gardening events. Built for plant enthusiasts, composters, hydroponic hobbyists, and every green thumb in between.",
+    "techStack": [
+      "React.js",
+      "Tailwind CSS",
+      "Daisy UI",
+      "Firebase Auth",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "React Router"
+    ],
+    "liveLink": "https://ecobary-gardening-community.web.app/",
+    "github": "https://github.com/Abdullah0604/EcoBari-gardening-community-platform",
+    "challenges": [
+      "Designing a clean yet content-rich UI for both beginners and experts",
+      "Managing protected routes and secure dashboard content",
+      "Handling image uploads and managing different content visibility states"
+    ],
+    "futurePlans": [
+      "Add comment and reply system to posts",
+      "Introduce gardener badges and achievements",
+      "Enable plant disease detection with AI integration"
+    ]
+  },
+  "runnexus": {
+    "id": "runnexus",
+    "title": "RunNexus – Marathon Management System",
+    "description": "A full-featured platform for organizing and participating in marathons. Runners and organizers can manage events, registrations, and dashboards with a clean and responsive UI.",
+    "techStack": [
+      "React.js",
+      "Tailwind CSS",
+      "SwiperJS",
+      "Firebase Auth",
+      "Firebase Hosting",
+      "Firebase Admin",
+      "MongoDB",
+      "Express.js",
+      "Axios (with interceptors)",
+      "React Router"
+    ],
+    "liveLink": "https://run-nexus.web.app/",
+    "github": "https://github.com/Abdullah0604/marathon-management-system",
+    "challenges": [
+      "Securing admin-only routes using Firebase Admin SDK",
+      "Managing event registration deadlines and state updates dynamically",
+      "Creating a flexible dashboard system for both runners and organizers"
+    ],
+    "futurePlans": [
+      "Introduce real-time chat between organizers and participants",
+      "Add Google Maps-based marathon tracking",
+      "Launch a mobile version with push notifications"
+    ]
+  },
+  "boxnetic": {
+    "id": "boxnetic",
+    "title": "Boxnetic – Subscription Box Platform",
+    "description": "A personalized subscription box platform offering curated boxes tailored to user interests like gadgets, books, and more. Users can explore, subscribe, manage their boxes, and leave feedback.",
+    "techStack": [
+      "React.js",
+      "Tailwind CSS",
+      "Daisy UI",
+      "React Router DOM",
+      "Firebase Authentication",
+      "Firebase Hosting"
+    ],
+    "liveLink": "https://boxnetic-subscription-website.web.app/",
+    "github": "https://github.com/Abdullah0604/boxnetic-subscription-platform",
+    "challenges": [
+      "Designing dynamic routes for category-based subscription boxes",
+      "Implementing real-time auth-based UI updates",
+      "Managing responsive layout for complex box card designs"
+    ],
+    "futurePlans": [
+      "Add subscription billing with Stripe integration",
+      "Allow users to gift boxes to friends and family",
+      "Introduce loyalty rewards and limited-time mystery boxes"
+    ]
+  }
+}
